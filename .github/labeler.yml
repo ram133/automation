@@ -1,0 +1,12 @@
+bug:
+  - '**/*'
+  - any: ['bug', 'error', 'fix']
+
+enhancement:
+  - any: ['feature', 'enhancement', 'improve']
+
+documentation:
+  - any: ['docs', 'documentation', 'readme']
+
+automation:
+  - any: ['action', 'workflow', 'automation', 'cron']
