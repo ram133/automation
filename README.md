@@ -19,8 +19,20 @@ Goal: keep products alive with zero or near-zero manual work.
 | `auto-label.yml` | Auto-labels issues & PRs from keywords | on open/edit |
 | `star-notifier.yml` | Creates an issue when someone stars the repo | on star |
 | `hello-on-issue.yml` | Posts a welcome comment on new issues | on issue open |
+| `pr-welcome.yml` | Posts a welcome comment on new pull requests | on PR open |
 
 Copy any of these into your own repos under `.github/workflows/` and customize.
+
+---
+
+## Currently Running On
+
+- **services** — daily timestamp
+- **digital_factory** — daily timestamp
+- **GROK** — daily timestamp
+- **store** — daily timestamp
+- **NEWS** — daily content generation + stale issues
+- **product-kit** — daily maintenance stub
 
 ---
 
@@ -29,16 +41,6 @@ Copy any of these into your own repos under `.github/workflows/` and customize.
 1. Copy the desired `.yml` file into your target repository’s `.github/workflows/` folder
 2. Adjust the cron schedule or conditions as needed
 3. Commit and push — the Action becomes active immediately
-
-For product repos, start with `example-daily.yml` or `update-timestamp.yml` and expand from there.
-
----
-
-## Live Examples
-
-- `services` repo now runs the daily timestamp workflow
-- `product-kit` ships with a daily maintenance stub
-- `NEWS` runs a full daily content generation pipeline
 
 ---
 
