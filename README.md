@@ -17,6 +17,8 @@ Goal: keep products alive with zero or near-zero manual work.
 | `link-checker.yml` | Checks Markdown links, can open issue | weekly |
 | `stale-issues.yml` | Marks and closes inactive issues/PRs | daily |
 | `auto-label.yml` | Auto-labels issues & PRs from keywords | on open/edit |
+| `star-notifier.yml` | Creates an issue when someone stars the repo | on star |
+| `hello-on-issue.yml` | Posts a welcome comment on new issues | on issue open |
 
 Copy any of these into your own repos under `.github/workflows/` and customize.
 
@@ -29,6 +31,14 @@ Copy any of these into your own repos under `.github/workflows/` and customize.
 3. Commit and push — the Action becomes active immediately
 
 For product repos, start with `example-daily.yml` or `update-timestamp.yml` and expand from there.
+
+---
+
+## Live Examples
+
+- `services` repo now runs the daily timestamp workflow
+- `product-kit` ships with a daily maintenance stub
+- `NEWS` runs a full daily content generation pipeline
 
 ---
 
