@@ -1,0 +1,26 @@
+name: Example Daily Task
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 6 AM ChST (UTC+10)
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Example step
+        run: |
+          echo "This is a reusable daily automation pattern."
+          echo "Customize for content generation, data refresh, or status updates."
+
+      - name: Commit if needed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Add your generation logic here, then:
+          # git add .
+          # git commit -m "Daily update" || echo "No changes"
+          # git push
